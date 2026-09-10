@@ -30,8 +30,8 @@ jobs:
         run: |
           rm -rf site tmp
           mkdir -p site tmp
-          unzip -q pdf_yashi_pwa_v0.5.zip -d tmp
-          cp -a tmp/pdf_yashi_pwa_v0.5/. site/
+          unzip -q pdf_yashi_pwa_v0.5.1.zip -d tmp
+          cp -a tmp/pdf_yashi_pwa_v0.5.1/. site/
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
