@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - "pdf_yashi_pwa_v0.5.8.zip"
+      - "pdf_yashi_pwa_v0.5.9.zip"
       - ".github/workflows/deploy.yml"
   workflow_dispatch:
 
@@ -30,8 +30,8 @@ jobs:
         run: |
           rm -rf site tmp
           mkdir -p site tmp
-          unzip -q pdf_yashi_pwa_v0.5.8.zip -d tmp
-          cp -a tmp/pdf_yashi_pwa_v0.5.8/. site/
+          unzip -q pdf_yashi_pwa_v0.5.9.zip -d tmp
+          cp -a tmp/pdf_yashi_pwa_v0.5.9/. site/
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
