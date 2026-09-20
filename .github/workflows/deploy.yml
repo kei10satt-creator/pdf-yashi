@@ -3,7 +3,7 @@ on:
   push:
     branches: [main]
     paths:
-      - pdf_yashi_pwa_v0.10.1_PWA.zip
+      - pdf_yashi_pwa_v0.10.2_PWA.zip
       - .github/workflows/deploy.yml
   workflow_dispatch:
 permissions:
@@ -21,8 +21,8 @@ jobs:
       - name: Extract app
         run: |
           mkdir -p site tmp
-          unzip -q pdf_yashi_pwa_v0.10.1_PWA.zip -d tmp
-          cp -a tmp/pdf_yashi_pwa_v0.10.1/. site/
+          unzip -q pdf_yashi_pwa_v0.10.2_PWA.zip -d tmp
+          cp -a tmp/pdf_yashi_pwa_v0.10.2/. site/
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
